@@ -60,8 +60,3 @@ This repository demonstrates secure secret management using HashiCorp Vault and 
 
 ## Cleanup
 - Use `terraform destroy` to remove all resources
-
----
-
-Feel free to modify the configuration files and scripts to fit your specific use case.
-# HashiCorp_Vault_Practice

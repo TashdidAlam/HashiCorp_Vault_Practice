@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
     bucket         = "your-terraform-state-bucket"   # <-- Replace with your S3 bucket name
     key            = "state/terraform.tfstate"
-    region         = "us-east-1"                     # <-- Replace with your S3 bucket region
+    region         = var.region # <-- Optionally variablize backend region
     dynamodb_table = "your-lock-table"               # <-- Optional: for state locking
     encrypt        = true
   }
