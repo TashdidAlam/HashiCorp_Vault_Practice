@@ -43,7 +43,7 @@ resource "aws_instance" "example" {
   subnet_id                   = aws_subnet.public.id
   associate_public_ip_address = true
   vpc_security_group_ids      = [aws_security_group.ec2_sg.id]
-  key_name                    = "terraform-keypair"
+  key_name                    = "linux-test-keypair"
 
   tags = {
     Name        = var.ec2_name
